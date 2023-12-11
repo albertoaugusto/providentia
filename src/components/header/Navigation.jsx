@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import '../../styles/main.sass'
 import './navigation.sass'
 import logo from '../../assets/logo-digital.png'
 
@@ -17,12 +16,12 @@ function Header () {
     /*active link*/
     const[activeNav, setActiveNav] = useState("#home")
   return (
-    <header className="header">
+    <div className="header">
         <nav className="nav container">
             <a href="index.html" className="nav-logo"> 
                 <img src={logo} alt="logo providentia"/>
             </a>
-            <span className="slogan">Sua marca, sua identidade</span>
+            <p className="slogan">Sua marca, sua identidade</p>
             <div className={Toggle ? "nav-menu show-menu" : "nav-menu"}>
                 <ul className="nav-list grid">
                     <li className="nav-item">
@@ -57,7 +56,7 @@ function Header () {
                 <i className='bx bx-menu' alt="menu" ></i>
             </div>
         </nav>
-    </header>
+    </div>
   )
 }
 
