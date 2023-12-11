@@ -49,7 +49,7 @@ function Header () {
                     </li>
                 </ul>
                 {/*responsive button*/}
-                <i className="uil uil-times nav-close" alt="fechar" onClick={() => showMenu (!Toggle)}></i>
+                <i className="bx bx-x nav-close" alt="fechar" onClick={() => showMenu (!Toggle)}></i>
             </div>
             {/*responsive menu*/}
             <div className="nav-toggle" onClick={() => showMenu (!Toggle)}>
