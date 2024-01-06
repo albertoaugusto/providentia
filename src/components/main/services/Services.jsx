@@ -1,15 +1,13 @@
-import Problems from "./Problems"
+import './services.sass'
+import Problems from "./Problems/Problems"
+import Solutions from "./solutions/Solutions"
 
 const Services = () => {
   return (
-    <>
-    <section className="problems">
+    <section className="services " id="services">
         <Problems />
+        <Solutions/>
     </section>
-    <section>
-        
-    </section>
-    </>
   )
 }
 

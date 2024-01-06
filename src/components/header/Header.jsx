@@ -7,7 +7,7 @@ const Header = () => {
         <nav>
             <Navigation />
         </nav>
-        <div className="banner">
+        <div className="banner" id='home'>
             <div className="banner-container container">
                 <div className="banner-texts">
                     <h1 className="banner-title">

@@ -37,9 +37,22 @@ textarea
   padding: 6rem 0 2rem
   max-width: 1200px
 
+
 .grid
   display: grid
   gap: 1.5rem
+
+/*scroll animation*/
+.hidden
+  opacity: 0
+  filter: blur(5px)
+  transform: translateX(-100%)
+  transition: all 1s
+
+.show
+  opacity: 1 
+  filter: blur(0)
+  transform: translateX(0)
 
 
 @media screen and (max-width: 992px)
@@ -78,3 +91,4 @@ textarea
   .container 
       margin-left: variables.$mb-1
       margin-right: variables.$mb-1
+
