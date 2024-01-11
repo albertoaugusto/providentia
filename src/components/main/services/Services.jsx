@@ -1,4 +1,3 @@
-import './services.sass'
 import Problems from "./Problems/Problems"
 import Solutions from "./solutions/Solutions"
 

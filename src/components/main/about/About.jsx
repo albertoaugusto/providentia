@@ -13,7 +13,7 @@ const About = () => {
             <div className="row">
                 <div className="card-about">
                     <div className="item-in">
-                        <h4 className='card-title-about'>Nossa equipe</h4>
+                        <h3 className='card-title-about'>Nossa equipe</h3>
                         <div className="seperator"></div>
                         <p className='card-text'>
                             Nossa esquipe altamente qualificada possui <b>ampla experiência</b> no ramo e 
@@ -24,7 +24,7 @@ const About = () => {
                 </div>
                 <div className="card-about">
                     <div className="item-in">
-                        <h4 className='card-title-about'>Nosso diferencial</h4>
+                        <h3 className='card-title-about'>Nosso diferencial</h3>
                         <div className="seperator"></div>
                         <p className='card-text'>
                             Garantimos atendimento personalizado, agilidade nos processos e 
@@ -35,7 +35,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
   )
 }
 

@@ -1,21 +1,37 @@
 @use '../../styles/variables'
 
 .banner
-    color: variables.$font-color1
-    height: 100vh
-    background-color: variables.$bg-color1
+  color: variables.$font-color1
+  height: 100vh
+  background-color: variables.$bg-color1
 
 .banner-texts
-    padding-top: 30vh 
+  padding-top: 30vh
+
 
 .banner-title
-    font-size: variables.$font-size-cta-bold
-    color: variables.$font-color3
-    font-weight: 800
+  font-size: variables.$font-size-cta-bold
+  color: variables.$font-color3
+  font-weight: 800
 
 .banner-subtitle
-    font-size: variables.$font-size-cta
-    width: 100%
+  font-size: variables.$font-size-cta
+  width: 100%
+
+.banner-container
+  position: relative
+
+.img-header
+  position: absolute
+  top: 10rem
+  left: 37rem
+  opacity: 0.4
+  transition: .5s
+  max-width: 35rem
+
+.img-header:hover
+  opacity: 1
+  transform: scale(1.2)
 
 /*text animation*/
 h2
@@ -108,7 +124,7 @@ span:nth-child(14)
   margin-top: 2rem
   display: inline-block
   padding: .75rem 2.5rem
-  border-radius: 10rem
+  border-radius: 2rem
   transition: all .3s
   position: relative
   overflow: hidden
@@ -121,7 +137,7 @@ span:nth-child(14)
     width: 100%
     height: 100%
     background-color: variables.$font-color2
-    border-radius: 10rem
+    border-radius: 2rem
     z-index: -2
   
   &:before 
@@ -133,7 +149,7 @@ span:nth-child(14)
     height: 100%
     background-color: darken(variables.$font-color2, 15%)
     transition: all .3s
-    border-radius: 10rem
+    border-radius: 2rem
     z-index: -1
   
   &:hover 
@@ -149,61 +165,73 @@ span:nth-child(14)
     color: variables.$font-color1
     
 /*responsible*/
+
+@media screen and (max-width: 1366px)
+  .img-header
+    top: 5rem
+    left: 35rem
+
 @media screen and (max-width:768px)
-    .banner-texts
-      padding-top: 2rem 
+  .img-header
+    display: none !important
 
-    .banner-title
-      text-align: center
-      margin-bottom: variables.$mb-1-5
+  .banner-texts
+    padding-top: 2rem 
 
-    .button
-      width: 100%
-      text-align: center
+  .banner-title
+    text-align: center
+    margin-bottom: variables.$mb-1-5
+
+  .button
+    width: 100%
+    text-align: center
 
 @media screen and (max-width: 350px)
-    .banner-texts
-      padding-top: 0
+  .img-header
+    display: none !important
 
-    .banner-title
-      font-size: 2rem
-      color: variables.$font-color3
-      font-weight: 800
-      text-align: center
+  .banner-texts
+    padding-top: 0
 
-    .banner-subtitle
-      font-size: 2rem
-      width: 100%
-      text-align: center  
+  .banner-title
+    font-size: 2rem
+    color: variables.$font-color3
+    font-weight: 800
+    text-align: center
 
-    span:nth-child(11) 
-      animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0)
-      color: variables.$font-color3
-      font-size: 2.3rem
-      font-weight: 800
+  .banner-subtitle
+    font-size: 2rem
+    width: 100%
+    text-align: center  
 
-    span:nth-child(12) 
-      animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0)
-      color: variables.$font-color3
-      font-size: 2.3rem
-      font-weight: 800
+  span:nth-child(11) 
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0)
+    color: variables.$font-color3
+    font-size: 2.3rem
+    font-weight: 800
 
-    span:nth-child(13) 
-      animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0)
-      color: variables.$font-color3
-      font-size: 2.3rem
-      font-weight: 800
+  span:nth-child(12) 
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0)
+    color: variables.$font-color3
+    font-size: 2.3rem
+    font-weight: 800
 
-    span:nth-child(14) 
-      animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0)
-      color: variables.$font-color3
-      font-size: 2.3rem
-      font-weight: 800
+  span:nth-child(13) 
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0)
+    color: variables.$font-color3
+    font-size: 2.3rem
+    font-weight: 800
 
-    .button
-      width: 100%
-      justify-content: center
-      align-items: center
-      text-align: center
+  span:nth-child(14) 
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0)
+    color: variables.$font-color3
+    font-size: 2.3rem
+    font-weight: 800
+
+  .button
+    width: 100%
+    justify-content: center
+    align-items: center
+    text-align: center
 
       

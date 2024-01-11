@@ -1,5 +1,6 @@
 import './header.sass'
 import Navigation from './Navigation'
+import LogoHeader from '../../assets/providentia-vet-ot.png'
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
         </nav>
         <div className="banner" id='home'>
             <div className="banner-container container">
+                <img className='img-header' src={LogoHeader} alt="" />
                 <div className="banner-texts">
                     <h1 className="banner-title">
                         <span>Providentia Consultoria</span>

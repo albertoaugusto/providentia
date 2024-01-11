@@ -1,12 +1,12 @@
 @use '../../../styles/variables'
 
 #about
-    height: 70vh
-    font-family: variables.$footer-font
-    margin-top: 15rem 
-    height: 100vh
-    color: #fff
+  font-family: variables.$footer-font 
+  color: #fff
  
+.about-container
+  max-width: 100% 
+
 .about-subtitle
   font-size: 1.3rem
   font-weight: lighter
@@ -22,7 +22,7 @@
   max-width: 100%
   display: grid
   grid-template-columns: repeat(2, 1fr)
-  grid-gap: 2rem
+  grid-gap: 1.5rem
   cursor: default
 
 .seperator
@@ -41,19 +41,6 @@
   
 .title .row
   padding: 50px 0 0
-  
-.item
-  position: relative
-  margin-bottom: 30px
-  min-height: 1px
-  float: left
-  -webkit-backface-visibility: hidden
-  -webkit-tap-highlight-color: transparent
-  -webkit-touch-callout: none
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
   
 .item-in
   height: 14rem
