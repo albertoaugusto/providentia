@@ -1,0 +1,143 @@
+@use '../../../styles/variables'
+
+.form-container
+    grid-template-columns: repeat(2, max-content)
+    justify-content: center
+    column-gap: 6rem
+    padding-bottom: 3rem
+    color: #fff
+
+.form-title
+    text-align: center
+    font-size: 1rem
+    font-weight: 400
+    margin-bottom: variables.$mb-1-5
+
+.form-info
+    display: grid
+    row-gap: 1rem
+    grid-template-columns: 20rem
+
+
+/*right side form*/    
+.contact-form
+    width: 20rem
+
+.contact-card
+    background-color: #111
+    border: 1px solid variables.$font-color3
+    padding: 1rem
+    border-radius: .75rem
+    text-align: center
+
+.contact-icon
+    font-size: 1.7rem 
+    color: #fff
+    margin-bottom: variables.$mb-0-25
+
+.contact-card-title
+    font-weight: variables.$font-size-medium
+    color: variables.$font-color3
+
+.contact-card-data
+    font-size: .9rem
+    display: block
+    margin-bottom: variables.$mb-0-75
+
+.contact-button
+    color: variables.$font-color3
+    font-size: 1rem
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    column-gap: .25rem
+    
+.contact-button-icon
+    font-size: 1rem
+    transition: .4s ease-in-out
+    
+.contact-button:hover, 
+.contact-button-icon
+    transform: translateX(0.25rem)
+    color: #fff
+
+.contact-form
+    width: 360px
+
+.contact-form-div
+    position: relative
+    margin-bottom: variables.$mb-2
+    height: 3rem
+
+.contact-form-input
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border: 1px solid variables.$font-color3
+    background: none
+    color: #fff
+    outline: none
+    border-radius: .75rem
+    padding: 1.5rem
+    z-index: 1
+
+.contact-form-tag
+    position: absolute
+    top: -1rem
+    left: 1.25rem
+    padding: .25rem
+    background-color: variables.$bg-color3
+    z-index: 10
+
+.contact-form-area
+    height: 11rem
+
+.contact-form-area textarea
+    resize: none
+
+.button-flex
+  display: inline-flex
+  align-items: center
+
+.button-form
+  display: inline-block
+  background-color: #111
+  color: #fff
+  padding: 1.5rem
+  border-radius: 1rem
+  transition: .3s
+
+.button-form:hover
+  background-color: variables.$font-color3
+
+.button-icon
+  margin-left: variables.$mb-0-5
+
+/*responsive*/
+@media screen and (max-width: 992px) 
+    .contact-container
+        column-gap: 3rem
+    
+@media screen and (max-width: 768px) 
+    .contact-container
+        grid-template-columns: 1fr
+        row-gap: 3rem
+
+    .contact-info
+        justify-content: center
+
+    .contact-form
+        margin: 0 auto
+
+
+@media screen and (max-width: 576px) 
+    .contact-info
+        grid-template-columns: 1fr
+    
+    .contact-form
+        width: 100%
+    
+@media screen and (max-width: 350px) 
+
