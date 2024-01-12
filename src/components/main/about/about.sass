@@ -5,7 +5,6 @@
   color: #fff
   margin-top: variables.$mb-2-5
 
-
 .about-container
   max-width: 100% 
 
@@ -64,3 +63,20 @@
   font-weight: 200
     
 
+/*responsive*/
+@media screen and (max-width: 992px) 
+    .row
+        column-gap: 3rem
+
+    .item-in
+      height: 18rem
+    
+@media screen and (max-width: 768px) 
+    .row
+        grid-template-columns: 1fr
+        row-gap: 2rem
+    
+    .item-in
+      height: auto
+
+    
