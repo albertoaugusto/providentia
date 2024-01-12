@@ -1,5 +1,12 @@
 @use '../../../styles/variables'
 
+.cont-title-section
+    text-align: center
+    margin-bottom: 3rem
+    font-size: 2rem
+    text-transform: uppercase
+    color: #fff
+
 .form-container
     grid-template-columns: repeat(2, max-content)
     justify-content: center
@@ -17,7 +24,6 @@
     display: grid
     row-gap: 1rem
     grid-template-columns: 20rem
-
 
 /*right side form*/    
 .contact-form
@@ -117,13 +123,16 @@
 
 /*responsive*/
 @media screen and (max-width: 992px) 
-    .contact-container
+    .form-container
         column-gap: 3rem
     
 @media screen and (max-width: 768px) 
-    .contact-container
+    .form-container
         grid-template-columns: 1fr
         row-gap: 3rem
+
+    .button-form
+        width: 100%
 
     .contact-info
         justify-content: center
@@ -135,9 +144,18 @@
 @media screen and (max-width: 576px) 
     .contact-info
         grid-template-columns: 1fr
+
+    .button-form
+        width: 100%
     
     .contact-form
         width: 100%
     
-@media screen and (max-width: 350px) 
+@media screen and (max-width: 320px) 
+
+    .button-form
+        width: 100%
+    
+    .contact-form
+        width: 80%
 

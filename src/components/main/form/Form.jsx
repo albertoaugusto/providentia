@@ -22,7 +22,7 @@ const Form = () => {
 
   return (
     <section className="form-section section container" id="contact">
-      <h3 className="title-section">Contate-nos</h3>
+      <h3 className="cont-title-section">Contate-nos</h3>
       <div className="form-container container grid">
         <div className="form-content">
           <h3 className="form-title">

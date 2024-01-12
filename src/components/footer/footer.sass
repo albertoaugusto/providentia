@@ -1,0 +1,66 @@
+@use '../../styles/variables'
+
+#footer
+    color: #fff
+    font-family: 'Josefin sans', sans serif
+    background-color: variables.$bg-color1
+    text-align: cenetr
+    
+    p
+        font-weight: 200
+
+.columns
+    display: grid
+    grid-template-columns: repeat(3, 4fr)
+    grid-gap: 2rem
+
+.column
+    width: 100%
+    padding: 2rem 
+
+.logo img
+    width: 70%
+
+.logo
+    diplay: flex
+
+.logo p    
+    font-size: 0.8rem
+    padding: 1rem 0
+
+.services-footer p
+    padding: 0.2rem 0
+
+.services-footer h3
+    margin-bottom: 0.5rem
+
+.social-media
+    display: flex
+    
+.social-media  a
+    padding: 0 0.5rem
+    font-size: 1.5rem
+    transition: .4s ease
+    color: #fff
+
+.social-media a:hover
+    color: variables.$font-color3
+
+.pay
+    display: flex
+    text-align: center
+
+.pay ul
+    margin:  0 40%
+    text-align: center
+    display: flex
+
+.pay li
+    padding: 0.5rem
+    text-align: center
+    font-size: 1.5rem
+    color: variables.$font-color3
+
+.copy
+    text-align: center
+    padding: 0.5rem
