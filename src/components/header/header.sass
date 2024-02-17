@@ -124,11 +124,11 @@ span:nth-child(14)
   margin-top: 2rem
   display: inline-block
   padding: .75rem 2.5rem
-  border-radius: 2rem
   transition: all .3s
   position: relative
   overflow: hidden
   z-index: 1
+  border-radius: .3rem
   &:after 
     content: ''
     position: absolute
@@ -136,8 +136,7 @@ span:nth-child(14)
     left: 0
     width: 100%
     height: 100%
-    background-color: variables.$font-color2
-    border-radius: 2rem
+    background-color: variables.$font-color3
     z-index: -2
   
   &:before 
@@ -147,13 +146,12 @@ span:nth-child(14)
     left: 0
     width: 0%
     height: 100%
-    background-color: darken(variables.$font-color2, 15%)
+    background-color: darken(variables.$font-color3, 15%)
     transition: all .3s
-    border-radius: 2rem
     z-index: -1
   
   &:hover 
-    color: #fff
+    color: #000
     &:before
       width: 100%
     

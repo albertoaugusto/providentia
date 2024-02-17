@@ -1,0 +1,74 @@
+@use '../../../styles/variables'
+
+#services
+    background-color: variables.$font-color3
+    padding: 10rem 5rem
+
+.services-title
+    text-align: center
+    font-size: 2rem
+    padding-bottom: 3rem
+    text-transform: uppercase
+    font-weight: bold
+
+.grid-services
+    display: grid
+    grid-template-columns: repeat(4, 3fr)
+    grid-gap: 2rem
+    position: relative
+    z-index: 1
+    width: 100%
+
+.card-services
+    width: 100%
+    background-color: variables.$bg-color3
+    padding: 1.8rem 1rem 1rem 1rem
+    border-radius: 0.2rem
+    border: 1px solid variables.$bg-color2
+    cursor: default
+    position: relative
+
+.icon
+    z-index: 2
+    position: relative
+    display: table
+    padding: 8px
+    color: #fff
+    font-size: 2.2rem
+
+h4
+    z-index: 2
+    position: relative
+    margin: 12px 0 4px 0
+    font-family: inherit
+    font-weight: 600
+    font-size: 1rem
+    line-height: 2
+    color: variables.$font-color3
+
+p
+    z-index: 2
+    position: relative
+    margin: 0
+    font-weight: 300
+    font-size: 0.8rem
+    line-height: 1.7
+    color: #fff
+
+/*responsive*/
+@media screen and (max-width: 992px)
+    .grid-services
+        column-gap: 3rem
+
+@media screen and (max-width: 768px)
+    .grid-services
+        margin: 0
+        padding: 0
+        width: 100%
+        grid-template-columns: 4fr
+        row-gap: 2rem
+
+    .card-services
+        max-width: 100%
+        padding: 1rem 1rem 1rem 1rem
+        

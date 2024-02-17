@@ -1,7 +1,7 @@
 import './briefs.sass'
-import CtdoFrango from '../../../assets/ct-do-frango.jpg'
-import Prime from '../../../assets/prime.jpg'
-import Rock from '../../../assets/rock-trends.jpg'
+import CtdoFrango from '../../../../assets/ct-do-frango.jpg'
+import Prime from '../../../../assets/prime.jpg'
+import Rock from '../../../../assets/rock-trends.jpg'
 
 const Briefs = () => {
   return (
