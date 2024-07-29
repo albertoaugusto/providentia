@@ -6,16 +6,16 @@
   background-color: variables.$bg-color1
 
 .banner-texts
-  padding-top: 30vh
-
+  padding-top: 32vh
 
 .banner-title
   font-size: variables.$font-size-cta-bold
   color: variables.$font-color3
-  font-weight: 800
+  font-weight: 600
 
 .banner-subtitle
   font-size: variables.$font-size-cta
+  font-weight: 400
   width: 100%
 
 .banner-container
@@ -23,15 +23,15 @@
 
 .img-header
   position: absolute
-  top: 10rem
-  left: 37rem
-  opacity: 0.4
+  top: 14rem
+  left: 40rem
+  opacity: 0.3
   transition: .5s
-  max-width: 35rem
+  max-width: 32rem
 
 .img-header:hover
   opacity: 1
-  transform: scale(1.2)
+  transform: scale(1.1)
 
 /*text animation*/
 h2
@@ -82,42 +82,23 @@ span:nth-child(10)
 span:nth-child(11) 
   animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0)
   color: variables.$font-color3
-  font-size: variables.$font-size-cta-bold
-  font-weight: 800
 
 span:nth-child(12) 
   animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0)
   color: variables.$font-color3
-  font-size: variables.$font-size-cta-bold
-  font-weight: 800
 
 span:nth-child(13) 
   animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0)
   color: variables.$font-color3
-  font-size: variables.$font-size-cta-bold
-  font-weight: 800
 
 span:nth-child(14) 
   animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0)
   color: variables.$font-color3
-  font-size: variables.$font-size-cta-bold
-  font-weight: 800
 
 @keyframes fade-in 
   100% 
     opacity: 1
     filter: blur(0)
-
-/*hover text animation*/
-.underline-magical
-  background-image: linear-gradient(120deg, variables.$font-color2 0%, variables.$font-color2 100%)
-  background-repeat: no-repeat
-  background-size: 100% 0.2em
-  background-position: 0 88%
-  transition: background-size 0.25s ease-in
-  &:hover 
-    padding: 1px
-    background-size: 100% 88%
 
 /*button hover*/    
 .button 
@@ -138,7 +119,6 @@ span:nth-child(14)
     height: 100%
     background-color: variables.$font-color3
     z-index: -2
-  
   &:before 
     content: ''
     position: absolute
@@ -149,7 +129,6 @@ span:nth-child(14)
     background-color: darken(variables.$font-color3, 15%)
     transition: all .3s
     z-index: -1
-  
   &:hover 
     color: #000
     &:before
@@ -159,15 +138,18 @@ span:nth-child(14)
     font-size: 1.7rem
     text-transform: uppercase
     letter-spacing: .10rem
-    font-weight: 800
+    font-weight: 600
     color: variables.$font-color1
     
-/*responsible*/
-
+/*responsive*/
 @media screen and (max-width: 1366px)
+  .banner-texts
+    padding-top: 25vh
+
   .img-header
-    top: 5rem
-    left: 35rem
+    max-width: 25rem
+    top: 9rem
+    left: 40rem
 
 @media screen and (max-width:768px)
   .img-header

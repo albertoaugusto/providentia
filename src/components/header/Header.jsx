@@ -1,6 +1,6 @@
 import './header.sass'
 import Navigation from './Navigation'
-import LogoHeader from '../../assets/providentia-vet-ot.png'
+import LogoHeader from '../../assets/logo-PROVIDENTIA.png'
 
 const Header = () => {
   return (
@@ -22,16 +22,16 @@ const Header = () => {
                         <span>seu,</span> <br />
                         <span>fortaleça&nbsp;</span>
                         <span>sua&nbsp;</span>
-                        <span className='underline-magical'>marca&nbsp;</span>
+                        <span>marca&nbsp;</span>
                         <span>e</span> <br />
                         <span>proteja&nbsp;</span>
                         <span>seu&nbsp;</span>
                         <span>futuro&nbsp;</span>
-                        <span className='underline-magical'>hoje!</span>
+                        <span>hoje!</span>
                     </h2>
                 </div>
                 <div className="button">
-                    <a aria-label="chat whatsapp"  href="https://wa.me/5511992456699" className="button-link" target='_blank' rel='noreferrer'>
+                    <a aria-label="chat whatsapp"  href="https://wa.me/5511948872447" className="button-link" target='_blank' rel='noreferrer'>
                             REGISTRE JÁ 
                     </a>
                 </div>

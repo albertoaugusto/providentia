@@ -1,5 +1,5 @@
 import './footer.sass'
-import Logo from '../../assets/logotipo.png'
+import Logo from '../../assets/logo-PROVIDENTIA.png'
 
 const Footer = () => {
   return (

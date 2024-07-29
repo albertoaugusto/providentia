@@ -43,7 +43,7 @@ function Header () {
                     </li>
 
                     <li className="nav-item">
-                        <a aria-label="chat whatsapp"  href="https://wa.me/5511992456699" className="nav-link contact" target='_blank' rel='noreferrer'>
+                        <a aria-label="chat whatsapp"  href="#contact" className="nav-link" >
                             <i className="bx bxl-whatsapp nav-icon" alt="chat whatsapp"></i> Contato
                         </a>
                     </li>
